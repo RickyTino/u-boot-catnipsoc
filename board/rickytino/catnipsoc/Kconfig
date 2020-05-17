@@ -1,0 +1,15 @@
+if TARGET_CATNIPSOC
+
+config SYS_BOARD
+	default "catnipsoc"
+
+config SYS_VENDOR
+	default "rickytino"
+
+config SYS_CONFIG_NAME
+	default "catnipsoc"
+
+config SYS_TEXT_BASE
+	default 0x80200000
+
+endif
