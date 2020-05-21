@@ -8,7 +8,7 @@
  * CPU configuration
  */
 /* CPU Timer rate */
-#define CONFIG_SYS_MIPS_TIMER_FREQ	50000000
+#define CONFIG_SYS_MIPS_TIMER_FREQ	25000000  /* Freq(CP0_Count) = Freq(CPU) / 2 */
 
 /*----------------------------------------------------------------------
  * Memory Layout
@@ -37,7 +37,6 @@
  * Environment
  */
 #define CONFIG_ENV_IS_NOWHERE      1
-//#define CONFIG_ENV_IS_IN_SPI_FLASH 1
 #define CONFIG_ENV_SECT_SIZE       0x10000
 #define CONFIG_ENV_OFFSET          0
 //#define CONFIG_ENV_SIZE            0x1000
@@ -47,7 +46,7 @@
     "netmask=255.255.255.0\0" \
     "load=tftpboot 0x80100000 uImage;iminfo\0" \
     "linux=tftpboot 0x80100000 uImage;bootm\0" \
-    "u-boot=tftpboot 0x80000000 u-boot.bin;go 0x80000000\0"
+    "u-boot=tftpboot 0x80200000 u-boot.bin;go 0x80200000\0"
 
 /* ---------------------------------------------------------------------
  * Board boot configuration
