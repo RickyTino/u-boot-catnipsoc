@@ -22,7 +22,7 @@
 
 #define CONFIG_SYS_MALLOC_LEN		(256 << 10)
 #define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
-#define CONFIG_SYS_LOAD_ADDR		0x80500000 /* default load address */
+#define CONFIG_SYS_LOAD_ADDR		0x80100000 /* default load address */
 
 /*----------------------------------------------------------------------
  * Commands
@@ -52,5 +52,6 @@
  * Board boot configuration
  */
 #define CONFIG_TIMESTAMP	/* Print image info with timestamp */
+#define CONFIG_SYS_BOOTM_LEN    16*1024*1024
 
 #endif	/* __CATNIPSOC_H */
