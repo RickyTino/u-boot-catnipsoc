@@ -41,9 +41,10 @@
 #define CONFIG_ENV_OFFSET          0
 //#define CONFIG_ENV_SIZE            0x1000
 #define CONFIG_EXTRA_ENV_SETTINGS \
-    "serverip=192.168.11.1\0" \
-    "ipaddr=192.168.11.2\0" \
+    "serverip=192.168.1.31\0" \
+    "ipaddr=192.168.1.250\0" \
     "netmask=255.255.255.0\0" \
+    "gatewayip=192.168.1.1\0" \
     "load=tftpboot 0x80100000 uImage;iminfo\0" \
     "linux=tftpboot 0x80100000 uImage;bootm\0" \
     "u-boot=tftpboot 0x80200000 u-boot.bin;go 0x80200000\0"
