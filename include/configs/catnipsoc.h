@@ -52,6 +52,6 @@
  * Board boot configuration
  */
 #define CONFIG_TIMESTAMP	/* Print image info with timestamp */
-#define CONFIG_SYS_BOOTM_LEN    16*1024*1024
+#define CONFIG_SYS_BOOTM_LEN    32*1024*1024
 
 #endif	/* __CATNIPSOC_H */
